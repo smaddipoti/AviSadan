@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avi Sadan - Overview</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #e8f5e9;
+            overflow: hidden;
+        }
+        .banner {
+            width: 100%;
+            background-color: #1308aa;
+            color: rgb(240, 131, 131);
+            text-align: center;
+            padding: 15px 0;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: calc(100vh - 100px);
+            background-color: rgb(195, 220, 134);
+        }
+        .left-image, .right {
+            height: 100%;
+        }
+        .left-image {
+            flex: 0.4;
+        }
+        .left-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .content {
+            flex: .6;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .content h1 {
+            margin: 0 0 15px;
+            color: #333;
+            font-size: 26px;
+        }
+        .content ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .content li {
+            margin-bottom: 12px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .right {
+            flex: 0.5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .gallery img {
+            width: 100%;
+            height: 25%;
+            object-fit: cover;
+        }
+        .address {
+            width: 100%;
+            font-size: 14px;
+            background-color: #7daf80;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Mobile Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                height: auto;
+            }
+            .left-image {
+                width: 100%;
+                flex: none;
+                height: 250px;
+            }
+            .left-image img {
+                height: 100%;
+                object-fit: cover;
+            }
+            .content {
+                padding: 20px;
+            }
+            .content h1 {
+                font-size: 24px;
+            }
+            .content li {
+                font-size: 15px;
+            }
+            .gallery {
+                flex-direction: row;
+                overflow-x: auto;
+                white-space: nowrap;
+                height: auto;
+            }
+            .gallery img {
+                width: 80%;
+                height: auto;
+                margin-right: 10px;
+            }
+            .banner {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        AVI SADAN
+    </div>
+    <div class="container">
+        <div class="left-image">
+            <img src="AviSadan.PNG" alt="Building Image">
+        </div>
+        <div class="content">
+            <h1>Building Overview</h1>
+            <ul>
+                <li>Eleven 1 BHK Flats</li>
+                <li>Five 1 RK Flats</li>
+                <li>Walkable from Hope Farm Junction and Kadugodi Metro</li>
+                <li>Modern and Good Interiors with All Standard Fittings</li>
+                <li>Safe, Secure, and Family-Oriented Residential Neighborhood</li>
+                <li>Prime Location and Close to IT Companies, Malls, and Supermarkets</li>
+                <li>Very Close to Whitefield Employment Hub</li>
+                <li>Renowned Residential Layout with Nice Roads for Long Walks</li>
+                <li>Security, Power Backup, Lift, CCTV, 24 Hrs Water, and Parking</li>
+            </ul>
+        </div>
+        <div class="right gallery">
+            <img src="Entrance.jpeg" alt="Gallery Image 1">
+            <img src="1RK.jpeg" alt="Gallery Image 2">
+            <img src="HallKitchen.jpeg" alt="Gallery Image 3">
+            <img src="Hall.jpeg" alt="Gallery Image 4">
+        </div>
+    </div>
+    <div class="address">
+        AviSadan #244/1, 6th Main, Maithri Layout, Kadugodi, Whitefield, Bengaluru, Karnataka 560066
+    </div>
+</body>
+</html>

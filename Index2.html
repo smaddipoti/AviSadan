@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avi Sadan - Building Flats</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #e8f5e9;
+            overflow: hidden;
+        }
+        .banner {
+            width: 100%;
+            background-color: #e7eae2;
+            color: rgb(240, 131, 131);
+            text-align: center;
+            padding: 10px 0;
+            font-size: 45px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            max-width: 1200px;
+            background-color: rgb(195, 220, 134);
+            border-radius: 0;
+            overflow: hidden;
+            margin: 0;
+            height: calc(100vh - 120px);
+        }
+        .left {
+            flex: 1;
+            padding: 2px;
+            text-align: center;
+        }
+        .right {
+            flex: 0.5;
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        h1 {
+            color: #333;
+            margin: 10px 0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 90px);
+            gap: 2px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .flat {
+            background-color: #43a047;
+            color: white;
+            padding: 20px;
+            font-size: 18px;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .flat:hover {
+            transform: scale(1.03);
+        }
+        .address {
+            width: 100%;
+            font-size: 16px;
+            background-color: #7daf80;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .right img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                height: auto;
+            }
+            .grid {
+                grid-template-columns: repeat(2, 90px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        AVI SADAN
+    </div>
+    <div class="container">
+        <div class="left">
+            <h1>Flats</h1>
+            <div class="grid">
+                <div class="flat">101</div>
+                <div class="flat">102</div>
+                <div class="flat">103</div>
+                <div class="flat">201</div>
+                <div class="flat">202</div>
+                <div class="flat">203</div>
+                <div class="flat">301</div>
+                <div class="flat">302</div>
+                <div class="flat">303</div>
+                <div class="flat">401</div>
+                <div class="flat">402</div>
+                <div class="flat">403</div>
+                <div class="flat">501</div>
+                <div class="flat">502</div>
+                <div class="flat">503</div>
+                <div class="flat">601</div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="AviSadan2.jpeg" alt="Building Image">
+        </div>
+    </div>
+    <div class="address">
+        AviSadan #244/1, 6th Main, Maithri Layout, Kadugodi, Whitefield, Bengaluru, Karnataka 560066
+    </div>
+</body>
+</html>

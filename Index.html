@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avi Sadan - Building Flats</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #e8f5e9;
+            overflow: hidden;
+        }
+        .banner {
+            width: 100%;
+            background-color: #77bae1;
+            color: rgb(240, 131, 131);
+            text-align: center;
+            padding: 10px 0;
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: calc(100vh - 100px);
+            background-color: rgb(195, 220, 134);
+        }
+        .left-image, .left, .right {
+            height: 100%;
+        }
+        .left-image {
+            flex: 0.3;
+        }
+        .left {
+            flex: 0.5;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        .right {
+            flex: 0.4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        .left-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);  /* 3 boxes per row */
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        .flat {
+            background-color: #43a047;
+            color: white;
+            padding: 20px;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;  /* Box for each flat */
+            box-sizing: border-box;  /* Ensure borders don't add size */
+        }
+        .gallery img {
+            width: 100%;
+            height: 25%;
+            object-fit: cover;
+            margin: 0;
+            padding: 0;
+        }
+        .address {
+            width: 100%;
+            font-size: 16px;
+            background-color: #7daf80;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        AVI SADAN
+    </div>
+    <div class="container">
+        <div class="left-image">
+            <img src="AviSadan.PNG" alt="Building Image">
+        </div>
+        <div class="left">
+            <h1>Flats</h1>
+            <div class="grid">
+                <div class="flat">101</div>
+                <div class="flat">102</div>
+                <div class="flat">103</div>
+                <div class="flat">201</div>
+                <div class="flat">202</div>
+                <div class="flat">203</div>
+                <div class="flat">301</div>
+                <div class="flat">302</div>
+                <div class="flat">303</div>
+                <div class="flat">401</div>
+                <div class="flat">402</div>
+                <div class="flat">403</div>
+                <div class="flat">501</div>
+                <div class="flat">502</div>
+                <div class="flat">503</div>
+                <div class="flat">601</div>
+            </div>
+        </div>
+        <div class="right gallery">
+            <img src="Entrance.jpeg" alt="Gallery Image 1">
+            <img src="1RK.jpeg" alt="Gallery Image 2">
+            <img src="HallKitchen.jpeg" alt="Gallery Image 3">
+            <img src="Hall.jpeg" alt="Gallery Image 4">
+        </div>
+    </div>
+    <div class="address">
+        AviSadan #244/1, 6th Main, Maithri Layout, Kadugodi, Whitefield, Bengaluru, Karnataka 560066
+    </div>
+</body>
+</html>
